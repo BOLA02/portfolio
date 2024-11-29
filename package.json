@@ -1,0 +1,19 @@
+{
+  "name": "portfolio",
+  "version": "1.0.0",
+  "main": "tailwind.config.js",
+  "scripts": {
+    "dev": "npx tailwindcss -i ./src/input.css -o ./build/css/output.css --watch",
+    "prettier": "npx prettier --write '**/*.html"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "description": "",
+  "devDependencies": {
+    "prettier-plugin-tailwindcss": "^0.6.8"
+  },
+  "dependencies": {
+    "tailwindcss-motion": "^0.4.1-beta"
+  }
+}

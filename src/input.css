@@ -1,0 +1,72 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+body{
+    background-color: #AFB3B7;
+}
+header{
+    background-color: #5A636A;
+}
+.main-container{
+    width: 80%;
+    margin: auto;
+    /* height: 100vh; */
+    box-shadow: #0D1F23;
+}
+
+.hov:hover{
+    transition: all ease-out 5ms;
+    border: none;
+}
+
+.bolatito{
+    color: #88969D;
+
+}
+
+.animation{
+    font-size: 1.5rem;
+    animation-name: animate;
+    animation-duration: 3s;
+
+}
+
+@keyframes animate{
+    0%{
+        transform:translatey(-5000px);
+        opacity: 0;
+    }
+    50%{
+        transform: translatey(50px);
+        opacity: 2;
+    }
+    100%{
+        transform: translateY();
+        opacity: 100;
+    }
+}
+
+.about{
+    animation: fade-in linear;
+    animation-timeline: view();
+    animation-range-start: -10px;
+    animation-range-end:400px;
+}
+
+@keyframes fade-in{
+   from{
+    scale: .5;
+    opacity: 0;
+   }
+    to{
+        scale:1 ;
+        opacity: 1;
+    }
+
+}
+h2 {
+  font-family: "Orbitron", serif;
+  font-optical-sizing: auto;
+  font-weight: weight;
+  font-style: normal;
+}
